@@ -5,6 +5,7 @@
 //  Created by Marcus Arnett on 10/10/23.
 //
 
+#if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
 import SwiftUI
 
 internal extension [String: Property] {
@@ -19,3 +20,5 @@ internal extension [String: Property] {
         return result
     }
 }
+#endif
+
